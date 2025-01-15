@@ -20,6 +20,7 @@
     # any module necessary for this one to work correctly
     'depends': [
         'base',
+        # Pour trouver le sale_management il faut activer le mode développeur puis aller vers Apps et copier le id du module
         'sale_management'
     ],
 
@@ -27,6 +28,7 @@
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
+        # Templates cpour le qweb view pour les rapports
         'templates.xml',
         'views/clientspec.xml',
     ],

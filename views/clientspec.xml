@@ -4,6 +4,7 @@
 
 <!-- Add Media Comment field to existing view -->
 <record model="ir.ui.view" id="partner_client_form_view">
+<!--    comme on a besoin d'ajoute un attribut à une vues qui existe déja alors nous avons déclarés le record -->
      <field name="name">view.client</field>
      <field name="model">res.partner</field>
      <field name="inherit_id" ref="base.view_partner_form"/>
@@ -45,6 +46,7 @@
 
 
 <record model="ir.actions.act_window" id="commande_list_action">
+<!--    on a pas besoin de declarer des vues car on veut la copier directement  -->
      <field name="name">Commandes</field>
      <field name="res_model">sale.order</field>
      <field name="view_mode">tree,form,calendar</field>
@@ -115,9 +117,6 @@
         <menuitem id="assurance_menu" name="assurances"
                   parent="clientspec_menu"
                   action="assurance_list_action"/>
-
-
-
 
 
 
